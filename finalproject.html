@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href= "finalproject.css">
+</head>
+<body>
+  <div class="chatbot">
+    <div class="chatlog">
+      <div class= "chat">
+        <p class="message">Hello, is anything bothering you today?</p>
+      </div>
+      <div id="response" class="hidden chat response">
+        <p id="anon" class="message"></p>
+      </div>
+      <div class="hidden chat">
+        <p class="message">Really, what's wrong?</p>
+      </div>
+      <div id="response" class="hidden chat response">
+        <p id="anon" class="message"></p>
+      </div>
+    </div>
+    <div>
+      <input id="answer" type="text" placeholder="Type Something...">
+      <input onclick="send()" type="submit" value="Send">
+    </div>
+  </div>
+  <div id="footer">
+    Call 1-800-950-NAMI or 1-800-273-TALK
+  </div>
+</body>
+<script type="text/javascript" src="finalproject.js"></script>
+</html>

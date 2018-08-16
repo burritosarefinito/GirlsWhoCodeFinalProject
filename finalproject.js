@@ -1,8 +1,38 @@
+var bother = false;
+var wrong = false;
+var talk = false;
+var understanding = false;
+
 function send(){
   var user = document.getElementById("answer").value;
-  document.getElementById("anon").innerHTML = user;
-  document.getElementById("response").style.display = "block";
-  respond(user);
+  var div = document.createElement("div");
+  document.getElementById("chatlog").appendChild(div);
+  div.setAttribute("class", "chat response");
+  var paragraph = document.createElement("p");
+  var text = document.createTextNode(user);
+  paragraph.setAttribute("class", "message");
+  paragraph.appendChild(text);
+  div.appendChild(paragraph);
+  if(talk){
+    respond4(user);
+  } else if(wrong){
+    respond3(user);
+  } else if(bother){
+    respond2(user);
+  } else {
+    respond(user);
+  }
+}
+
+function botAnswer(computer){
+  var bot = document.createElement("bot");
+  document.getElementById("chatlog").appendChild(bot);
+  bot.setAttribute("class", "chat");
+  var para = document.createElement("p");
+  var txt = document.createTextNode(computer);
+  para.setAttribute("class", "message");
+  para.appendChild(txt);
+  bot.appendChild(para);
 }
 
 function respond(response){
@@ -10,20 +40,53 @@ function respond(response){
   var yes = ["yes","yeah","ye","yup","ya","yah","yas","yea"];
   var no = ["no","nah","na","nope","noo"];
   if (yes.includes(input.toLowerCase())) {
+    bother = true;
     input = "";
-    output.innerHTML = "<h1> Really, what's wrong?</h1>";
-    document.getElementById("input").value = "";
-    input = document.getElementById("input").value;
-    output.innerHTML = "<h1> Would you like to tell me more about it?</h1>";
-      if (yes.includes(input.toLowerCase())) {
-        output.innerHTML = "<h1> I'm here to listen.</h1>";
-        document.getElementById("input").value = "";
-      } else if (no.includes(input.toLowerCase())){
-          output.innerHTML= "<h1> Well if you need me, I'm always here.";
-          document.getElementById("input").value = "";
-      }
-  } else if (no.includes(input.toLowerCase())){
-    output.innerHTML = "<h1> That's good to hear! </h1>";
-    document.getElementById("input").value = "";
+    document.getElementById("answer").value = "";
+    var computer = "Really? What's wrong?"
+    setTimeout(botAnswer, 1000, computer);
     }
+    else if (no.includes(input.toLowerCase())){
+      bother = true;
+      input = "";
+      document.getElementById("answer").value = "";
+      var computer = "That's good to hear!"
+      setTimeout(botAnswer, 1000, computer);
+    }
+  }
+
+function respond2(response){
+  var input = response;
+  if (document.getElementById("answer").value !== ""){
+    wrong = true;
+    input = "";
+    document.getElementById("answer").value = "";
+    var computer = "Would you like to tell me more about it?"
+    setTimeout(botAnswer, 1000, computer);
+    }
+  }
+
+function respond3(response){
+  var input = response;
+  var yes = ["yes","yeah","ye","yup","ya","yah","yas","yea","sure","ok","okay","mhm","fine","alright"];
+  var no = ["no","nah","na","nope","noo","never","not at all","not really"];
+  if (yes.includes(input.toLowerCase())) {
+    talk = true;
+    input = "";
+    document.getElementById("answer").value = "";
+    var computer = "I'm here to listen.";
+    setTimeout(botAnswer, 1000, computer);
+  }
+}
+
+function respond4(response){
+  var input = response;
+  if (document.getElementById("answer").value !== ""){
+    understanding = true;
+    input = "";
+    document.getElementById("answer").value = "";
+    var computer = "I understand how you feel, but remember everything will be okay :) ";
+    setTimeout(botAnswer, 1000, computer);
+  }
+
 }

@@ -1,16 +1,16 @@
 html body{
-  background: url("https://images.unsplash.com/photo-1517951039583-3b7ea804afa7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9c73eea8dc0abdbf5d189e40d4d5af5d&auto=format&fit=crop&w=1050&q=80") no-repeat center fixed;
+  background: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/06/36/6856299993ea2f8.jpg") no-repeat center fixed;
 -webkit-background-size: cover;
 background: cover;
 }
-h1{
+/* h1{
   text-align: center;
   font-size: 40px;
-}
+  font-family: sans-serif;
+} */
 .topnav {
     background-color: #a3c2c2;
     overflow: hidden;
-    list-style: none;
 }
 
 /* Style the links inside the navigation bar */
@@ -23,6 +23,15 @@ h1{
     text-decoration: none;
     font-size: 17px;
 }
+.content{
+  padding: 16px;
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -35,6 +44,9 @@ h1{
     background-color: black;
     color: white;
 }
+.main{
+  margin-top: 30px;
+}
 h2{
   text-align: center;
   font-size: 30px;
@@ -44,6 +56,7 @@ h2{
   background-color:#a3c2c2;
   width: 80%;
   margin:auto;
+  margin-bottom: 50px;
 }
 li{
   text-align: center;
@@ -67,6 +80,7 @@ p{
 a{
   text-align: center;
   font-size: 30px;
+  text-decoration-color: white;
 }
 
 .carousel .item {
@@ -74,11 +88,12 @@ a{
   color: purple;
 }
 
-.item img {
-    position: absolute;
-    top: 600;
-    left: 600;
-    min-height: 500px;
+#myCarousel{
+  border: 7px solid #a3c2c2;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 80%;
+  position: center;
 }
 
 span{
@@ -89,22 +104,28 @@ span{
 }
 .footer {
     position: fixed;
-    left: 0;
     bottom: 0;
-    width: 100%;
-    background-color: grey;
-    color: black;
+    width: 50%;
+    background-color: white;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
+    margin-left: 25% ;
+
 }
 .container{
   position: relative;
-  width: 100%
+  width: 80%
 }
 .container video{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+}
+.center {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width:15%;
 }

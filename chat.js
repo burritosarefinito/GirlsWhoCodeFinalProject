@@ -54,7 +54,7 @@ function botAnswer(computer){
 
 function respond(response){
   var input = response;
-  var yes = ["yes","yeah","ye","yup","ya","yah","yas","yea"];
+  var yes = ["yes","yeah","ye","yup","ya","yah","yas","yea","yep"];
   var no = ["no","nah","na","nope","noo"];
   if (yes.includes(input.toLowerCase())) {
     bother = true;
@@ -87,7 +87,7 @@ function respond2(response){
 
 function respond3(response){
   var input = response;
-  var yes = ["yes","yeah","ye","yup","ya","yah","yas","yea","sure","ok","okay","mhm","fine","alright"];
+  var yes = ["yes","yeah","ye","yup","ya","yah","yas","yea","sure","ok","okay","mhm","fine","alright","yep"];
   var no = ["no","nah","na","nope","noo","never","not at all","not really"];
   if (yes.includes(input.toLowerCase())) {
     talk = true;
@@ -121,7 +121,7 @@ function respond4(response){
 
 function respond5(response){
   var input = response;
-  var yes = ["yes","yeah","ye","yup","ya","yah","yas","yea","sure","ok","okay","mhm","fine","alright"];
+  var yes = ["yes","yeah","ye","yup","ya","yah","yas","yea","sure","ok","okay","mhm","fine","alright","yep"];
   var no = ["no","nah","na","nope","noo","never","not at all","not really"];
   if (yes.includes(input.toLowerCase())) {
     reminder = true;

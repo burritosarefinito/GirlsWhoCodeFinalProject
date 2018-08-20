@@ -21,3 +21,21 @@ h4{
 a{
   font-size: 20px;
 }
+
+#button{
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 14px 40px;
+  border: 6px solid black;
+
+}
+
+#button:hover {
+    background-color: #a3c2c2;
+    color: white;
+
+}
+
+#button:active{
+  background-color: black;
+}

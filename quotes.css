@@ -4,11 +4,10 @@ div{
 
 .content{
   text-align: center;
-  background-color: #a3c2c2;
   height: 330px;
   width: 500px;
   margin: auto;
-  border: 10px solid black;
+  border: 10px solid #a3c2c2;
   padding: 40px 10px;
   font-size: 18px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

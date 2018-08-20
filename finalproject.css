@@ -32,10 +32,6 @@ background: cover;
   width: 100%;
 }
 
-.sticky + .content {
-  padding-top: 102px;
-}
-
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -54,6 +50,8 @@ background: cover;
 h2{
   text-align: center;
   font-size: 30px;
+  font-family:sans-serif;
+
 }
 #Info{
   text-align: center;
@@ -63,12 +61,12 @@ h2{
   margin-bottom: 50px;
 }
 li{
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   color:black;
 }
 ul{
-  text-align: center;
+  text-align:center;
   font-size: 20px;
   color:white;
 }
@@ -115,6 +113,7 @@ span{
     font-weight: bold;
     font-size: 25px;
     margin-left: 25% ;
+    font-family:sans-serif;
 
 }
 .container{
@@ -132,4 +131,8 @@ span{
   margin-left:auto;
   margin-right:auto;
   width:15%;
+}
+img{
+  width: 250px;
+  height: 200px;
 }

@@ -1,7 +1,7 @@
 .chatbot{
   width: 500px;
   min-width: 390px;
-  height: 400px;
+  height: 425px;
   background: #fff;
   padding: 25px;
   margin: 20px auto;
@@ -41,8 +41,8 @@
 #reply{
   position: absolute;
   text-align: center;
-  bottom: -93px;
-  width: 37%;
+  bottom: -100px;
+  width: 40%;
 }
 
 .response{
@@ -53,4 +53,13 @@
 .user{
   background-color: #3498DB;
   color: white;
+}
+
+#answer{
+  width: 220px;
+  height: 30px;
+}
+
+#button{
+  height: 35px;
 }

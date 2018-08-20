@@ -2,10 +2,10 @@ div{
   text-align: center;
 }
 
-#quote{
+.content{
   text-align: center;
   background-color: #a3c2c2;
-  height: 150px;
+  height: 330px;
   width: 500px;
   margin: auto;
   border: 10px solid black;
@@ -14,11 +14,7 @@ div{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h4{
-  font-size: 20px;
-}
-
-a{
+h4, a{
   font-size: 20px;
 }
 

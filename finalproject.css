@@ -134,6 +134,11 @@ embed{
 #credits{
   text-align: left;
   color: blue;
-  font-size: 2px;
+  font-size: 1px;
   font-style: normal;
+}
+h3{
+  font-size: 15px;
+  font-family: sans-serif;
+  
 }

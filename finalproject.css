@@ -58,7 +58,7 @@ h2{
 }
 li{
   text-align: left;
-  font-size: 18px;
+  font-size: 23px;
   color:black;
   font-family: serif;
 }
@@ -68,11 +68,11 @@ ul{
   color:#779ecb;
 }
 b{
-  font-size: 24px;
+  font-size: 30px;
   color: black;
 }
 p{
-  font-size: 20px;
+  font-size: 32px;
   color:#f8f8ff;
 }
 a{
